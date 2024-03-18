@@ -10,17 +10,21 @@
  '''
 
 # lineas con datos
-user = "warclimb"
-edad = 37
-lenguaje = "Cobol"
+user1 = "warclimb"
+edad1 = 37
+lenguaje1 = "Cobol"
 
 # añadir datos al archivo
-def add_data():
-    with open("warclimb.txt","a+") as file:
+def add_data(user, edad, lenguaje):
+    with open("warclimb.txt","a+",encoding="utf-8") as file:
         file.write(f"Nombre: {user}\n")
         file.write(f"Edad: {edad}\n")
         file.write(f"Lenguaje de programación favorito: {lenguaje}\n")
- add_data()
+
+
+if __name__ == "__main__":
+    # add_data(user1, edad1, lenguaje1)
+
 '''
  * DIFICULTAD EXTRA (opcional):
  * Desarrolla un programa de gestión de ventas que almacena sus datos en un 
@@ -31,6 +35,7 @@ def add_data():
  *   actualizar, eliminar productos y salir.
  * - También debe poseer opciones para calcular la venta total y por producto.
  * - La opción salir borra el .txt.'''
+
 
 
  
